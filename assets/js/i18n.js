@@ -12,8 +12,9 @@ const translations = {
         },
         about: {
             title: 'À propos',
-            p1: 'Turbine est un groupe de rock fondé à Montréal. Leur son unique mêle énergie brute et mélodies accrocheuses, créant une expérience musicale inoubliable.',
-            p2: 'Depuis leur formation, le groupe s\'est démarqué sur la scène locale avec des performances live explosives et des compositions originales qui repoussent les limites du genre.',
+            p1: 'Turbine est un projet musical novateur qui fusionne l\'énergie brute du turntablism et la puissance des musiques électroniques, avec un accent marqué sur la basshouse, le breakbeat et la drum and bass. Imprégné de l\'ADN du hip hop et nourri aux DVDs de scratch, le trio repousse les frontières du scratch traditionnel en le réinventant sous forme d\'expérience dancefloor.',
+            p2: 'En 2022, Turbine s\'est hissé à la 4e place des DMC World Championships, l\'une des compétitions les plus prestigieuses au monde. Cette reconnaissance a ouvert la voie à des sorties internationales, notamment sur le label français Banzai Lab, ainsi qu\'à des collaborations avec les labels Gorilla Warfare (UK) et Gravitas Recordings (US), avec les singles feat. Killa P (Roll Deep) et feat. Pav4n (Foreign Beggars).',
+            p3: 'Sur scène, Turbine dévoile un live show hyperactif taillé pour les festivals, qui conjugue bass music, sound design et techniques de scratch explosives. Ce format unique, pensé pour le dancefloor, a déjà électrisé plusieurs scènes majeures, entre autres Osheaga, le Dox\'Art Festival et le FME, mettant en avant un mélange unique entre musique électronique et hip-hop sur la scène bass music.',
         },
         music: {
             title: 'Musique',
@@ -53,8 +54,9 @@ const translations = {
         },
         about: {
             title: 'About',
-            p1: 'Turbine is a rock band founded in Montréal. Their unique sound blends raw energy with catchy melodies, creating an unforgettable musical experience.',
-            p2: 'Since their formation, the band has made a name for itself on the local scene with explosive live performances and original compositions that push the boundaries of the genre.',
+            p1: 'Turbine is a groundbreaking trio that fuses turntablism with high-energy bass music, pushing the boundaries of scratch culture by turning it into a full-on dancefloor experience. Rooted in hip hop and shaped by the legacy of scratch technique, the group reinvents DJing through explosive live performances blending basshouse, breakbeat and drum & bass.',
+            p2: 'In 2022, Turbine placed 4th at the DMC World Championships, earning global recognition and opening the door to major collaborations. The trio has since released on Banzai Lab, Gorilla Warfare (feat. Killa P of Roll Deep) and Gravitas Recordings (feat. Pav4n of Foreign Beggars).',
+            p3: 'Their hyperactive live show, driven by aggressive scratch techniques and heavy sound design, is built for big stages and festival crowds. Turbine has already shaken key events such as Osheaga, Dox\'Art Festival, and FME, bringing a unique crossover between electronic music and hip hop to the front of the bass scene.',
         },
         music: {
             title: 'Music',
