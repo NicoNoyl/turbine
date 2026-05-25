@@ -27,6 +27,7 @@ const translations = {
             title:   'Prochains concerts',
             none:    'Aucun concert prévu pour le moment. Restez à l\'affût !',
             tickets: 'Billets',
+            sep:     'Septembre',
         },
         contact: {
             title:   'Contact',
@@ -70,6 +71,7 @@ const translations = {
             title:   'Next Shows',
             none:    'No upcoming shows at this time. Stay tuned!',
             tickets: 'Tickets',
+            sep:     'September',
         },
         contact: {
             title:   'Contact',
