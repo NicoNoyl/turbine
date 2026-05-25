@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Turbine — Contact">
+    <title>Turbine — Contact</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/responsive.css">
+</head>
+<body>
+
+    <nav id="navbar">
+        <div class="nav-logo">
+            <a href="index.html">TURBINE</a>
+        </div>
+        <ul class="nav-links" id="nav-links">
+            <li><a href="index.html"   data-i18n="nav.about"   data-page="index.html"></a></li>
+            <li><a href="music.html"   data-i18n="nav.music"   data-page="music.html"></a></li>
+            <li><a href="video.html"   data-i18n="nav.video"   data-page="video.html"></a></li>
+            <li><a href="shows.html"   data-i18n="nav.shows"   data-page="shows.html"></a></li>
+            <li><a href="contact.html" data-i18n="nav.contact" data-page="contact.html"></a></li>
+        </ul>
+        <div class="lang-switcher">
+            <button class="lang-btn" data-lang="fr">FR</button>
+            <span>|</span>
+            <button class="lang-btn" data-lang="en">EN</button>
+        </div>
+        <button class="hamburger" id="hamburger" aria-label="Menu">
+            <span></span><span></span><span></span>
+        </button>
+    </nav>
+
+    <div class="page-hero">
+        <h1 data-i18n="nav.contact"></h1>
+    </div>
+
+    <section class="section">
+        <div class="container">
+            <div class="contact-layout">
+                <form id="contact-form" novalidate>
+                    <div class="form-group">
+                        <input type="text" id="name" name="name" required
+                               data-i18n-placeholder="contact.name">
+                    </div>
+                    <div class="form-group">
+                        <input type="email" id="email" name="email" required
+                               data-i18n-placeholder="contact.email">
+                    </div>
+                    <div class="form-group">
+                        <textarea id="message" name="message" rows="6" required
+                                  data-i18n-placeholder="contact.message"></textarea>
+                    </div>
+                    <button type="submit" class="btn-primary" data-i18n="contact.send"></button>
+                </form>
+                <div class="contact-info">
+                    <div class="social-links">
+                        <a href="#" class="social-link">Facebook</a>
+                        <a href="#" class="social-link">Instagram</a>
+                        <a href="#" class="social-link">YouTube</a>
+                        <a href="#" class="social-link">TikTok</a>
+                    </div>
+                    <p class="contact-email">
+                        <a href="mailto:info@turbine.com">info@turbine.com</a>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; <span class="year"></span> Turbine &mdash; <span data-i18n="footer.rights"></span></p>
+    </footer>
+
+    <script src="assets/js/i18n.js"></script>
+    <script src="assets/js/main.js"></script>
+</body>
+</html>

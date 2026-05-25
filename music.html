@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Turbine — Groupe de musique / Music band">
-    <title>Turbine</title>
+    <meta name="description" content="Turbine — Musique / Music">
+    <title>Turbine — Music</title>
     <link rel="stylesheet" href="assets/css/style.css">
     <link rel="stylesheet" href="assets/css/responsive.css">
 </head>
@@ -31,26 +31,28 @@
         </button>
     </nav>
 
-    <section class="hero">
-        <div class="hero-content">
-            <h1>TURBINE</h1>
-            <p data-i18n="hero.tagline"></p>
-        </div>
-        <a href="#about" class="scroll-down" aria-label="Scroll">&#8595;</a>
-    </section>
+    <div class="page-hero">
+        <h1 data-i18n="nav.music"></h1>
+    </div>
 
-    <section id="about" class="section">
+    <section class="section">
         <div class="container">
-            <h2 data-i18n="about.title"></h2>
-            <div class="about-content">
-                <div class="about-text">
-                    <p data-i18n="about.p1"></p>
-                    <p data-i18n="about.p2"></p>
+            <div class="music-grid" id="music-grid">
+                <!--
+                Example album card — duplicate as needed:
+                <div class="album-card">
+                    <img src="assets/images/albums/album1.jpg" alt="Album title">
+                    <div class="album-info">
+                        <h3>Album Title</h3>
+                        <p>2024</p>
+                    </div>
                 </div>
-                <div class="about-image">
-                    <img src="assets/images/band/band.jpg" alt="Turbine"
-                         onerror="this.parentElement.style.display='none'">
-                </div>
+                -->
+            </div>
+            <div class="streaming-links">
+                <a href="#" class="stream-btn spotify">Spotify</a>
+                <a href="#" class="stream-btn apple">Apple Music</a>
+                <a href="#" class="stream-btn bandcamp">Bandcamp</a>
             </div>
         </div>
     </section>

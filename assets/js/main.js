@@ -1,8 +1,15 @@
 document.addEventListener('DOMContentLoaded', () => {
 
     // ── Footer year ───────────────────────────────────
-    const yearEl = document.getElementById('year');
-    if (yearEl) yearEl.textContent = new Date().getFullYear();
+    document.querySelectorAll('.year').forEach(el => {
+        el.textContent = new Date().getFullYear();
+    });
+
+    // ── Active nav link (by current page) ────────────
+    const currentPage = window.location.pathname.split('/').pop() || 'index.html';
+    document.querySelectorAll('.nav-links a[data-page]').forEach(link => {
+        link.classList.toggle('active-link', link.dataset.page === currentPage);
+    });
 
     // ── Hamburger menu ────────────────────────────────
     const hamburger = document.getElementById('hamburger');
@@ -21,24 +28,6 @@ document.addEventListener('DOMContentLoaded', () => {
     window.addEventListener('scroll', () => {
         navbar.classList.toggle('scrolled', window.scrollY > 40);
     }, { passive: true });
-
-    // ── Active nav link on scroll ─────────────────────
-    const sections = document.querySelectorAll('section[id]');
-    const navItems  = document.querySelectorAll('.nav-links a');
-
-    const sectionObserver = new IntersectionObserver(entries => {
-        entries.forEach(entry => {
-            if (entry.isIntersecting) {
-                const id = entry.target.id;
-                navItems.forEach(item => {
-                    item.classList.toggle('active-link',
-                        item.getAttribute('href') === `#${id}`);
-                });
-            }
-        });
-    }, { threshold: 0.35 });
-
-    sections.forEach(s => sectionObserver.observe(s));
 
     // ── Contact form ──────────────────────────────────
     const form = document.getElementById('contact-form');

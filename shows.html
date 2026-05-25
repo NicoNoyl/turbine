@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Turbine — Groupe de musique / Music band">
-    <title>Turbine</title>
+    <meta name="description" content="Turbine — Prochains concerts / Next Shows">
+    <title>Turbine — Next Shows</title>
     <link rel="stylesheet" href="assets/css/style.css">
     <link rel="stylesheet" href="assets/css/responsive.css">
 </head>
@@ -31,26 +31,29 @@
         </button>
     </nav>
 
-    <section class="hero">
-        <div class="hero-content">
-            <h1>TURBINE</h1>
-            <p data-i18n="hero.tagline"></p>
-        </div>
-        <a href="#about" class="scroll-down" aria-label="Scroll">&#8595;</a>
-    </section>
+    <div class="page-hero">
+        <h1 data-i18n="shows.title"></h1>
+    </div>
 
-    <section id="about" class="section">
+    <section class="section">
         <div class="container">
-            <h2 data-i18n="about.title"></h2>
-            <div class="about-content">
-                <div class="about-text">
-                    <p data-i18n="about.p1"></p>
-                    <p data-i18n="about.p2"></p>
+            <div class="shows-list">
+                <!--
+                Example show item — duplicate as needed:
+                <div class="show-item">
+                    <div class="show-date">
+                        <span class="day">14</span>
+                        <span class="month">Juin</span>
+                        <span class="year-show">2026</span>
+                    </div>
+                    <div class="show-info">
+                        <h3>Club Soda</h3>
+                        <p>Montréal, QC</p>
+                    </div>
+                    <a href="#" class="show-ticket" data-i18n="shows.tickets"></a>
                 </div>
-                <div class="about-image">
-                    <img src="assets/images/band/band.jpg" alt="Turbine"
-                         onerror="this.parentElement.style.display='none'">
-                </div>
+                -->
+                <p class="no-shows" data-i18n="shows.none"></p>
             </div>
         </div>
     </section>
