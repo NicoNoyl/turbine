@@ -8,7 +8,7 @@ const translations = {
             contact: 'Contact',
         },
         hero: {
-            tagline: 'Rock — Montréal',
+            tagline: 'TURNTABLISM BASS MUSIC BAND — MONTREAL',
         },
         about: {
             title: 'À propos',
@@ -50,7 +50,7 @@ const translations = {
             contact: 'Contact',
         },
         hero: {
-            tagline: 'Rock — Montréal',
+            tagline: 'TURNTABLISM BASS MUSIC BAND — MONTREAL',
         },
         about: {
             title: 'About',

@@ -26,7 +26,9 @@
       "Bash(git -C /Users/nicolasrame/Documents/GIT/Turbine add assets/css/style.css)",
       "Bash(curl -L \"https://drive.google.com/uc?export=download&id=1OsEmn-9X2y_PvcDjFWZ35wvI6KEB5qfv\" -o /tmp/turbine_header --write-out \"%{content_type} %{http_code}\")",
       "Bash(cp /tmp/turbine_header /Users/nicolasrame/Documents/GIT/Turbine/assets/images/header.png && ls -lh /Users/nicolasrame/Documents/GIT/Turbine/assets/images/header.png)",
-      "Bash(git -C /Users/nicolasrame/Documents/GIT/Turbine add -A)"
+      "Bash(git -C /Users/nicolasrame/Documents/GIT/Turbine add -A)",
+      "Bash(git -C /Users/nicolasrame/Documents/GIT/Turbine add index.html assets/js/i18n.js)",
+      "Bash(curl -L \"https://drive.google.com/uc?export=download&id=1DfGMihmfYfDjtrG7lpD8EOZk4wpIZnzz\" -o /tmp/turbine_favicon --write-out \"%{content_type} %{http_code}\")"
     ]
   }
 }
