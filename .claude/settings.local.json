@@ -1,0 +1,32 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(gh repo *)",
+      "WebFetch(domain:github.com)",
+      "Bash(brew list *)",
+      "Bash(git init *)",
+      "Bash(git remote *)",
+      "Bash(git add *)",
+      "Bash(git commit -m ' *)",
+      "Bash(ls ~/.ssh/*.pub 2>/dev/null && echo \"SSH key found\" || echo \"No SSH key\")",
+      "Bash(git push *)",
+      "Bash(chmod 700 ~/.ssh)",
+      "Bash(chmod 600 ~/.ssh/id_ed25519_github)",
+      "Bash(chmod 644 ~/.ssh/id_ed25519_github.pub)",
+      "Bash(chmod 600 ~/.ssh/config)",
+      "Bash(git -C /Users/nicolasrame/Documents/GIT/Turbine remote set-url origin git@github.com:NicoNoyl/turbine.git)",
+      "Bash(git -C /Users/nicolasrame/Documents/GIT/Turbine remote -v)",
+      "Bash(git -C /Users/nicolasrame/Documents/GIT/Turbine add music.html video.html shows.html contact.html index.html assets/css/style.css assets/js/main.js)",
+      "Bash(git -C /Users/nicolasrame/Documents/GIT/Turbine status)",
+      "Bash(git -C /Users/nicolasrame/Documents/GIT/Turbine commit -m ' *)",
+      "Bash(git -C /Users/nicolasrame/Documents/GIT/Turbine push)",
+      "Bash(git -C /Users/nicolasrame/Documents/GIT/Turbine add music.html assets/css/style.css)",
+      "Bash(ssh-keyscan github.com)",
+      "Bash(ssh -T git@github.com)",
+      "Bash(git -C /Users/nicolasrame/Documents/GIT/Turbine add assets/css/style.css)",
+      "Bash(curl -L \"https://drive.google.com/uc?export=download&id=1OsEmn-9X2y_PvcDjFWZ35wvI6KEB5qfv\" -o /tmp/turbine_header --write-out \"%{content_type} %{http_code}\")",
+      "Bash(cp /tmp/turbine_header /Users/nicolasrame/Documents/GIT/Turbine/assets/images/header.png && ls -lh /Users/nicolasrame/Documents/GIT/Turbine/assets/images/header.png)",
+      "Bash(git -C /Users/nicolasrame/Documents/GIT/Turbine add -A)"
+    ]
+  }
+}

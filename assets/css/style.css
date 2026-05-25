@@ -40,11 +40,14 @@ body {
 #navbar.scrolled { box-shadow: 0 2px 20px rgba(0,0,0,0.6); }
 
 .nav-logo a {
-    font-size: 1.6rem;
-    font-weight: 900;
-    letter-spacing: 6px;
-    color: var(--text);
     text-decoration: none;
+    display: flex;
+    align-items: center;
+}
+
+.nav-logo-img {
+    height: 36px;
+    width: auto;
 }
 
 .nav-links {
@@ -133,12 +136,10 @@ body {
     position: relative;
 }
 
-.hero-content h1 {
-    font-size: clamp(4rem, 14vw, 11rem);
-    font-weight: 900;
-    letter-spacing: 12px;
-    line-height: 1;
-    margin-bottom: 1rem;
+.hero-logo {
+    width: min(600px, 70vw);
+    height: auto;
+    margin-bottom: 1.5rem;
 }
 
 .hero-content p {
