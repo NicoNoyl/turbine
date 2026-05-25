@@ -29,14 +29,35 @@ document.addEventListener('DOMContentLoaded', () => {
         navbar.classList.toggle('scrolled', window.scrollY > 40);
     }, { passive: true });
 
-    // ── Contact form ──────────────────────────────────
-    const form = document.getElementById('contact-form');
-    form?.addEventListener('submit', e => {
+    // ── Contact form (Formsubmit.co) ──────────────────
+    const form     = document.getElementById('contact-form');
+    const feedback = document.getElementById('form-feedback');
+
+    form?.addEventListener('submit', async e => {
         e.preventDefault();
-        // TODO: wire up to Formspree / EmailJS / your backend
-        const msg = typeof t === 'function' ? t('contact.success') : 'Message sent!';
-        alert(msg);
-        form.reset();
+        const btn = form.querySelector('button[type="submit"]');
+        btn.disabled = true;
+
+        try {
+            const res = await fetch('https://formsubmit.co/ajax/contact@turbinemusic.ca', {
+                method:  'POST',
+                headers: { 'Accept': 'application/json' },
+                body:    new FormData(form),
+            });
+
+            if (res.ok) {
+                feedback.textContent  = typeof t === 'function' ? t('contact.success') : 'Message envoyé !';
+                feedback.className    = 'form-feedback success';
+                form.reset();
+            } else {
+                throw new Error();
+            }
+        } catch {
+            feedback.textContent = typeof t === 'function' ? t('contact.error') : 'Erreur — réessayez.';
+            feedback.className   = 'form-feedback error';
+        } finally {
+            btn.disabled = false;
+        }
     });
 
 });

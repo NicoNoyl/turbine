@@ -417,6 +417,21 @@ h2::after {
     transform: translateY(-2px);
 }
 
+.btn-primary:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+    transform: none;
+}
+
+.form-feedback {
+    font-size: 0.9rem;
+    letter-spacing: 0.5px;
+    min-height: 1.4rem;
+}
+
+.form-feedback.success { color: #4caf50; }
+.form-feedback.error   { color: var(--accent); }
+
 .contact-info {
     display: flex;
     flex-direction: column;

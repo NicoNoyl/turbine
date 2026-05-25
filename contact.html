@@ -42,6 +42,12 @@
         <div class="container">
             <div class="contact-layout">
                 <form id="contact-form" novalidate>
+                    <!-- Formsubmit.co config -->
+                    <input type="hidden" name="_subject" value="Nouveau message depuis turbinemusic.ca">
+                    <input type="hidden" name="_template" value="table">
+                    <input type="hidden" name="_captcha" value="false">
+                    <input type="hidden" name="_source" value="turbinemusic.ca — Formulaire de contact">
+
                     <div class="form-group">
                         <input type="text" id="name" name="name" required
                                data-i18n-placeholder="contact.name">
@@ -55,6 +61,7 @@
                                   data-i18n-placeholder="contact.message"></textarea>
                     </div>
                     <button type="submit" class="btn-primary" data-i18n="contact.send"></button>
+                    <p id="form-feedback" class="form-feedback" aria-live="polite"></p>
                 </form>
                 <div class="contact-info">
                     <div class="social-links">
@@ -63,9 +70,6 @@
                         <a href="https://www.youtube.com/@turbinescratchmusic" class="social-link" target="_blank" rel="noopener">YouTube</a>
                         <a href="https://www.tiktok.com/@turbinescratchmusic" class="social-link" target="_blank" rel="noopener">TikTok</a>
                     </div>
-                    <p class="contact-email">
-                        <a href="mailto:info@turbine.com">info@turbine.com</a>
-                    </p>
                 </div>
             </div>
         </div>

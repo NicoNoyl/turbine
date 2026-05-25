@@ -34,7 +34,8 @@ const translations = {
             email:   'Votre courriel',
             message: 'Votre message',
             send:    'Envoyer',
-            success: 'Message envoyé !',
+            success: 'Message envoyé ! On te répond bientôt.',
+            error:   'Une erreur est survenue. Réessaie plus tard.',
         },
         footer: {
             rights: 'Tous droits réservés.',
@@ -76,7 +77,8 @@ const translations = {
             email:   'Your email',
             message: 'Your message',
             send:    'Send',
-            success: 'Message sent!',
+            success: 'Message sent! We\'ll get back to you soon.',
+            error:   'Something went wrong. Please try again later.',
         },
         footer: {
             rights: 'All rights reserved.',
