@@ -210,6 +210,11 @@ h2::after {
 }
 
 /* ── Music ───────────────────────────────────────── */
+.spotify-embed {
+    margin-bottom: 3rem;
+}
+
+
 .music-grid {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
