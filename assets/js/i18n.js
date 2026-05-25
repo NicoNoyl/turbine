@@ -21,6 +21,8 @@ const translations = {
         },
         video: {
             title:       'Vidéo',
+            live:        'Live',
+            clip:        'Clip',
             placeholder: 'Vidéo à venir',
         },
         shows: {
@@ -65,6 +67,8 @@ const translations = {
         },
         video: {
             title:       'Video',
+            live:        'Live',
+            clip:        'Clip',
             placeholder: 'Video coming soon',
         },
         shows: {

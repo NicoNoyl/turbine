@@ -272,6 +272,12 @@ h2::after {
 .stream-btn.bandcamp    { background: #1da0c3; color: #fff; }
 
 /* ── Video ───────────────────────────────────────── */
+.section h2 + h2,
+.video-grid + h2 {
+    margin-top: 4rem;
+}
+
+
 .video-grid {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
