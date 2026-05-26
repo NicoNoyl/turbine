@@ -48,6 +48,10 @@
     }
 }
 
+@media (max-width: 600px) {
+    .photo-gallery { columns: 1; }
+}
+
 @media (max-width: 480px) {
     .hero-content h1 { letter-spacing: 6px; }
 

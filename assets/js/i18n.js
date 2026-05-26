@@ -5,6 +5,7 @@ const translations = {
             music:   'Musique',
             video:   'Vidéo',
             shows:   'Concerts',
+            photos:  'Photos',
             contact: 'Contact',
         },
         hero: {
@@ -24,6 +25,10 @@ const translations = {
             live:        'Live',
             clip:        'Clip',
             placeholder: 'Vidéo à venir',
+        },
+        photos: {
+            title:  'Photos',
+            credit: 'Crédit',
         },
         shows: {
             title:   'Prochains concerts',
@@ -51,6 +56,7 @@ const translations = {
             music:   'Music',
             video:   'Video',
             shows:   'Next Shows',
+            photos:  'Photos',
             contact: 'Contact',
         },
         hero: {
@@ -70,6 +76,10 @@ const translations = {
             live:        'Live',
             clip:        'Clip',
             placeholder: 'Video coming soon',
+        },
+        photos: {
+            title:  'Photos',
+            credit: 'Credit',
         },
         shows: {
             title:   'Next Shows',

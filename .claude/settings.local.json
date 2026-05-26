@@ -28,7 +28,17 @@
       "Bash(cp /tmp/turbine_header /Users/nicolasrame/Documents/GIT/Turbine/assets/images/header.png && ls -lh /Users/nicolasrame/Documents/GIT/Turbine/assets/images/header.png)",
       "Bash(git -C /Users/nicolasrame/Documents/GIT/Turbine add -A)",
       "Bash(git -C /Users/nicolasrame/Documents/GIT/Turbine add index.html assets/js/i18n.js)",
-      "Bash(curl -L \"https://drive.google.com/uc?export=download&id=1DfGMihmfYfDjtrG7lpD8EOZk4wpIZnzz\" -o /tmp/turbine_favicon --write-out \"%{content_type} %{http_code}\")"
+      "Bash(curl -L \"https://drive.google.com/uc?export=download&id=1DfGMihmfYfDjtrG7lpD8EOZk4wpIZnzz\" -o /tmp/turbine_favicon --write-out \"%{content_type} %{http_code}\")",
+      "Bash(git -C /Users/nicolasrame/Documents/GIT/Turbine add contact.html)",
+      "Bash(git -C /Users/nicolasrame/Documents/GIT/Turbine add contact.html assets/js/main.js assets/js/i18n.js assets/css/style.css)",
+      "Bash(git -C /Users/nicolasrame/Documents/GIT/Turbine add shows.html assets/js/i18n.js)",
+      "Bash(git -C /Users/nicolasrame/Documents/GIT/Turbine add video.html assets/js/i18n.js assets/css/style.css)",
+      "Bash(git -C /Users/nicolasrame/Documents/GIT/Turbine add shows.html)",
+      "Bash(curl -L \"https://drive.google.com/uc?export=download&id=1i_mGLpwpugYpxEnIr_aV1hWQqAAAtx3s\" -o /Users/nicolasrame/Documents/GIT/Turbine/assets/images/photos/photo1.jpg --create-dirs --write-out \"%{content_type} %{size_download}\\\\n\")",
+      "Bash(curl -L \"https://drive.google.com/uc?export=download&id=17peIizSLMokcIbZClow5R2XE09oOUKUH\" -o /Users/nicolasrame/Documents/GIT/Turbine/assets/images/photos/photo2.jpg --create-dirs --write-out \"%{content_type} %{size_download}\\\\n\")",
+      "Bash(curl -L \"https://drive.google.com/uc?export=download&id=1BHuqcB6dz8ljUcMvbFfcsqrvcSZQVbKb\" -o /Users/nicolasrame/Documents/GIT/Turbine/assets/images/photos/photo3.jpg --create-dirs --write-out \"%{content_type} %{size_download}\\\\n\")",
+      "Bash(curl -L \"https://drive.google.com/uc?export=download&id=1qZYboXM8H77MJwa0ws7qVZHjUqEihfbg\" -o /Users/nicolasrame/Documents/GIT/Turbine/assets/images/photos/photo4.jpg --create-dirs --write-out \"%{content_type} %{size_download}\\\\n\")",
+      "Bash(wait)"
     ]
   }
 }

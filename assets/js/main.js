@@ -29,6 +29,27 @@ document.addEventListener('DOMContentLoaded', () => {
         navbar.classList.toggle('scrolled', window.scrollY > 40);
     }, { passive: true });
 
+    // ── Lightbox ──────────────────────────────────────
+    const lightbox    = document.getElementById('lightbox');
+    const lightboxImg = document.getElementById('lightbox-img');
+    const lightboxClose = document.getElementById('lightbox-close');
+
+    document.querySelectorAll('.photo-item img').forEach(img => {
+        img.addEventListener('click', () => {
+            lightboxImg.src = img.src;
+            lightboxImg.alt = img.alt;
+            lightbox.classList.add('open');
+        });
+    });
+
+    lightboxClose?.addEventListener('click', () => lightbox.classList.remove('open'));
+    lightbox?.addEventListener('click', e => {
+        if (e.target === lightbox) lightbox.classList.remove('open');
+    });
+    document.addEventListener('keydown', e => {
+        if (e.key === 'Escape') lightbox?.classList.remove('open');
+    });
+
     // ── Contact form (Formsubmit.co) ──────────────────
     const form     = document.getElementById('contact-form');
     const feedback = document.getElementById('form-feedback');

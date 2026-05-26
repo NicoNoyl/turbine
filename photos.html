@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Turbine — Photos">
+    <title>Turbine — Photos</title>
+    <link rel="icon" type="image/png" href="assets/images/favicon.png">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/responsive.css">
+</head>
+<body>
+
+    <nav id="navbar">
+        <div class="nav-logo">
+            <a href="index.html">
+                <img src="assets/images/header.png" alt="Turbine" class="nav-logo-img">
+            </a>
+        </div>
+        <ul class="nav-links" id="nav-links">
+            <li><a href="index.html"   data-i18n="nav.about"   data-page="index.html"></a></li>
+            <li><a href="music.html"   data-i18n="nav.music"   data-page="music.html"></a></li>
+            <li><a href="video.html"   data-i18n="nav.video"   data-page="video.html"></a></li>
+            <li><a href="shows.html"   data-i18n="nav.shows"   data-page="shows.html"></a></li>
+            <li><a href="photos.html"  data-i18n="nav.photos"  data-page="photos.html"></a></li>
+            <li><a href="contact.html" data-i18n="nav.contact" data-page="contact.html"></a></li>
+        </ul>
+        <div class="lang-switcher">
+            <button class="lang-btn" data-lang="fr">FR</button>
+            <span>|</span>
+            <button class="lang-btn" data-lang="en">EN</button>
+        </div>
+        <button class="hamburger" id="hamburger" aria-label="Menu">
+            <span></span><span></span><span></span>
+        </button>
+    </nav>
+
+    <div class="page-hero">
+        <h1 data-i18n="photos.title"></h1>
+    </div>
+
+    <section class="section">
+        <div class="container">
+            <div class="photo-gallery">
+
+                <div class="photo-item">
+                    <img src="assets/images/photos/photo1.png" alt="Turbine" loading="lazy">
+                    <p class="photo-credit"><span data-i18n="photos.credit"></span> : Bruno Destombes</p>
+                </div>
+
+                <div class="photo-item">
+                    <img src="assets/images/photos/photo2.jpg" alt="Turbine" loading="lazy">
+                    <p class="photo-credit"><span data-i18n="photos.credit"></span> : Bruno Destombes</p>
+                </div>
+
+                <div class="photo-item">
+                    <img src="assets/images/photos/photo3.jpg" alt="Turbine" loading="lazy">
+                    <p class="photo-credit"><span data-i18n="photos.credit"></span> : Bruno Destombes</p>
+                </div>
+
+                <div class="photo-item">
+                    <img src="assets/images/photos/photo4.jpg" alt="Turbine" loading="lazy">
+                    <p class="photo-credit"><span data-i18n="photos.credit"></span> : Audrey Alexandrescu</p>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Lightbox -->
+    <div id="lightbox" class="lightbox" role="dialog" aria-modal="true">
+        <button class="lightbox-close" id="lightbox-close" aria-label="Fermer">&times;</button>
+        <img id="lightbox-img" src="" alt="">
+    </div>
+
+    <footer>
+        <p>&copy; <span class="year"></span> Turbine &mdash; <span data-i18n="footer.rights"></span></p>
+    </footer>
+
+    <script src="assets/js/i18n.js"></script>
+    <script src="assets/js/main.js"></script>
+</body>
+</html>
